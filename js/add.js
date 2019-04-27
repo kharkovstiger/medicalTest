@@ -1,4 +1,4 @@
-app.controller('addCtrl', ['$scope', '$http', function($scope, $http) {
+app.controller('addCtrl', ['$scope', '$http', '$location', function($scope, $http, $location) {
 
     var baseURL='https://test-for-linor.herokuapp.com/api';
 
@@ -30,5 +30,9 @@ app.controller('addCtrl', ['$scope', '$http', function($scope, $http) {
                 console.log(response.status+", "+response.data);
             }
         );
+    };
+
+    $scope.back = function () {
+        $location.url('/');
     }
 }]);

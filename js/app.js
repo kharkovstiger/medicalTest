@@ -5,13 +5,13 @@ app.config(function($routeProvider) {
         .when("/", {
             templateUrl : "main.html"
         })
-        .when("/customer", {
-            templateUrl : "customer.html"
-        })
-        .when("/order", {
-            templateUrl : "order.html"
+        .when("/test?:n", {
+            templateUrl : "test.html"
         })
         .when("/add", {
             templateUrl : "add.html"
+        })
+        .when("/finish", {
+            templateUrl : "finish.html"
         })
 });

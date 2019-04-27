@@ -1,0 +1,11 @@
+<div ng-controller="testCtrl" ng-cloak>
+    <div>Question {{index+1}}/{{n}}: <p> {{question.question}}</p></div>
+    <p>----------------------------------------------------------</p>
+    <p ng-repeat="answer in question.answers">
+        * <span ng-click="chose($index)" ng-style="{'background-color': {OK: 'rgba(0, 255, 0, 0.4)', NOK: 'rgba(255, 0, 0, 0.4)'}[ response[$index] ]}">{{answer.answer}}</span>
+        <br>
+    </p>
+    <br>
+    <button ng-hide="n==index+1" ng-click="next()"><p>Next Question</p></button>
+    <button ng-show="n==index+1" ng-click="finish()"><p>Finish Test</p></button>
+</div>

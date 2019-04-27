@@ -5,6 +5,9 @@
     <title>Medical Test</title>
     <link type="text/css" href="css/css.css" rel="stylesheet">
 </head>
+<header>
+    <p>Medical Test</p>
+</header>
 <body>
 
 <div ng-view></div>
@@ -16,6 +19,10 @@
 <script src="js/app.js"></script>
 <script src="js/main.js"></script>
 <script src="js/add.js"></script>
+<script src="js/test.js"></script>
 
 </body>
+<footer ng-controller="mainCtrl" ng-cloak>
+    <p><span ng-click="addQuestion()">©</span> LinoR&Tiger</p>
+</footer>
 </html>
