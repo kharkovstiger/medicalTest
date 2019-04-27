@@ -31,3 +31,11 @@ footer {
     /*border: 3px solid green;*/
     padding: 10%;
 }
+
+.main{
+    padding-left: 5%;
+}
+
+#question{
+    width: 100%;
+}

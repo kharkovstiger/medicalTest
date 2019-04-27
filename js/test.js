@@ -48,4 +48,8 @@ app.controller('testCtrl', ['$scope', '$http', '$location', '$routeParams', func
         }
         return a;
     }
+
+    $scope.back = function () {
+        $location.url('/');
+    }
 }]);
